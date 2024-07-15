@@ -1,15 +1,12 @@
 {
-    "workbench.colorTheme": "Dark+ One Monokai",
-    "workbench.iconTheme": "vscode-icons",
-    "editor.fontFamily": "'CaskaydiaCove Nerd Font',Fira Code,Consolas, 'Courier New', monospace",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 12,
-    "editor.stickyTabStops": true,
-    "editor.minimap.showSlider": "always",
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
+    "workbench.colorTheme": "Jellybeans",
+    "workbench.iconTheme": "vscode-icons",
     "workbench.colorCustomizations": {
         "editor.background": "#18181c",
+        "editor.guides.indentation": true,
+        "editor.guides.highlightActiveIndentation": true,
         "minimap.background": "#0f0f0f",
         "editorBracketHighlight.foreground1": "#B200FF",
         "editorBracketHighlight.foreground2": "#FF4500",
@@ -18,8 +15,6 @@
         "editorBracketHighlight.foreground5": "#20B2AA",
         "editorBracketHighlight.foreground6": "#1E90FF",
         "editorBracketHighlight.unexpectedBracket.foreground": "#db6165",
-        "editor.guides.indentation": true,
-        "editor.guides.highlightActiveIndentation": true,
         "editorIndentGuide.background1": "#59007F",
         "editorIndentGuide.background2": "#7F2200",
         "editorIndentGuide.background3": "#7F5200",
@@ -32,27 +27,123 @@
         "editorIndentGuide.activeBackground4": "#5E5B35",
         "editorIndentGuide.activeBackground5": "#105955",
         "editorIndentGuide.activeBackground6": "#0F487F",
+        "activityBarBadge.foreground": "#202020",
+        "activityBarBadge.background": "#01f9c6",
+        "textLink.foreground": "#ffa470",
+        "button.foreground": "#000000",
+        "button.background": "#ffa470",
+        "extensionButton.foreground": "#000000",
+        "extensionButton.background": "#01f9c6",
+        "extensionButton.prominentForeground": "#000000",
+        "extensionButton.prominentBackground": "#01f9c6",
+        // Overrides Theme Default Colors for InlayHints feature
+        "editorInlayHint.foreground": "#787878cc",
+        "editorInlayHint.background": "#00001CCC",
+        // Overrides Theme Parameter hints fg for InlayHints feature
+        "editorInlayHint.parameterForeground": "#787878cc",
+        "editorInlayHint.parameterBackground": "#00001CCC",
+        // Overrides Theme Type hints fg for InlayHints feature
+        "editorInlayHint.typeForeground": "#787878cc",
+        "editorInlayHint.typeBackground": "#08000088"
     },
+    "workbench.editor.revealIfOpen": true,
+    "workbench.editor.tabSizing": "fixed",
+    "workbench.view.alwaysShowHeaderActions": true,
+    "markdown.preview.fontSize": 12,
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.fontFamily": "'CaskaydiaCove Nerd Font',Fira Code,Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 12,
+    "editor.stickyTabStops": true,
+    "editor.minimap.showSlider": "always",
     "editor.semanticHighlighting.enabled": true,
     "editor.renderLineHighlight": "all",
     "editor.renderWhitespace": "all",
-    "markdown.preview.fontSize": 12,
-    "workbench.editor.revealIfOpen": true,
-    "security.workspace.trust.untrustedFiles": "open",
+    "editor.minimap.size": "fit",
+    "editor.mouseWheelZoom": true,
+    "window.confirmSaveUntitledWorkspace": false,
+    "explorer.fileNesting.enabled": true,
+    "github.gitAuthentication": false,
     "git.autofetch": true,
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
-    "workbench.editor.tabSizing": "fixed",
-    "editor.minimap.size": "fit",
-    "github.gitAuthentication": false,
+    "git.replaceTagsWhenPull": true,
     "git.terminalAuthentication": false,
     "terminal.integrated.defaultProfile.windows": "PowerShell",
-    "workbench.view.alwaysShowHeaderActions": true,
-    "editor.mouseWheelZoom": true,
     "terminal.integrated.mouseWheelZoom": true,
-    "window.confirmSaveUntitledWorkspace": false,
-    "explorer.fileNesting.enabled": true,
-    "explorer.excludeGitIgnore": true,
+    "diffEditor.ignoreTrimWhitespace": false,
     "terminal.integrated.fontSize": 13,
-    "git.replaceTagsWhenPull": true,
+    "git-graph.date.format": "ISO Date & Time",
+    "explorer.excludeGitIgnore": true,
+    "csharp.inlayHints.enableInlayHintsForImplicitVariableTypes": true,
+    "csharp.inlayHints.enableInlayHintsForLambdaParameterTypes": true,
+    "csharp.inlayHints.enableInlayHintsForImplicitObjectCreation": true,
+    "csharp.inlayHints.enableInlayHintsForTypes": true,
+    "dotnet.inlayHints.enableInlayHintsForParameters": true,
+    "dotnet.inlayHints.suppressInlayHintsForParametersThatMatchMethodIntent": true,
+    "dotnet.inlayHints.suppressInlayHintsForParametersThatMatchArgumentName": true,
+    "dotnet.inlayHints.suppressInlayHintsForParametersThatDifferOnlyBySuffix": true,
+    "dotnet.inlayHints.enableInlayHintsForObjectCreationParameters": true,
+    "dotnet.inlayHints.enableInlayHintsForIndexerParameters": true,
+    "dotnet.inlayHints.enableInlayHintsForLiteralParameters": true,
+    "debug.openDebug": "openOnDebugBreak",
+    "editor.tabCompletion": "off",
+    "powershell.integratedConsole.focusConsoleOnExecute": true,
+    "files.defaultLanguage": "",
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+    "powershell.buttons.showPanelMovementButtons": false,
+    "powershell.codeFolding.showLastLine": true,
+    "powershell.sideBar.CommandExplorerVisibility": false,
+    "git.pruneOnFetch": true,
+    "gitlab.duoChat.enabled": false,
+    "gitlab.aiAssistedCodeSuggestions.enabled": false,
+    "editor.semanticTokenColorCustomizations": {
+        "[Jellybeans]": {
+            "rules": {
+                "property": "#d6cebb",
+                "interface": "#73b663",
+                "namespace": "#d77F3c",
+                "extensionMethod": "#48a4ff",
+                "operator": "#4ac788",
+                "parameter": "#ffffff",
+                "enum": "#c24ba5",
+                "enumMember": "#d87daa",
+                "variable": "#a0a0a0",
+                "comment": "#986363"
+            }
+        }
+    },
+    "editor.tokenColorCustomizations": {
+        "[Jellybeans]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "support.type.property-name",
+                        "entity.name.tag.yaml"
+                    ],
+                    "settings": {
+                        "foreground": "#8197BF"
+                    }
+                },
+                {
+                    "scope": [
+                        "string.quoted.single.yaml"
+                    ],
+                    "settings": {
+                        "foreground": "#d77F3c"
+                    }
+                },
+                {
+                    "scope": [
+                        "punctuation.definition.comment.yaml",
+                        "comment.line.number-sign.yaml"
+                    ],
+                    "settings": {
+                        "foreground": "#986363"
+                    }
+                }
+            ]
+        }
+    },
+    "explorer.confirmDragAndDrop": false,
 }
