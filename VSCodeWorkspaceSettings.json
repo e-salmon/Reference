@@ -44,7 +44,17 @@
         "editorInlayHint.parameterBackground": "#00001CCC",
         // Overrides Theme Type hints fg for InlayHints feature
         "editorInlayHint.typeForeground": "#787878cc",
-        "editorInlayHint.typeBackground": "#08000088"
+        "editorInlayHint.typeBackground": "#08000088",
+        // Diff
+        "diffEditor.insertedTextBackground": "#00cc0033",    // previous
+        "diffEditor.removedTextBackground": "#cc000033",     // previous
+        "diffEditor.insertedLineBackground": "#22733833",
+        "diffEditor.removedLineBackground": "#72333333",
+        // Coverage Gutters
+        "diffEditorGutter.insertedLineBackground": "#22733866",
+        "diffEditorGutter.removedLineBackground": "#72333366",
+        "diffEditorOverview.insertedForeground": "#22733866",
+        "diffEditorOverview.removedForeground": "#72333366"
     },
     "workbench.editor.revealIfOpen": true,
     "workbench.editor.tabSizing": "fixed",
@@ -71,8 +81,7 @@
     "git.terminalAuthentication": false,
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "terminal.integrated.mouseWheelZoom": true,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "terminal.integrated.fontSize": 13,
+    "diffEditor.ignoreTrimWhitespace": true,
     "git-graph.date.format": "ISO Date & Time",
     "explorer.excludeGitIgnore": true,
     "csharp.inlayHints.enableInlayHintsForImplicitVariableTypes": true,
@@ -146,4 +155,21 @@
         }
     },
     "explorer.confirmDragAndDrop": false,
+    "git.fetchOnPull": true,
+    "coverage-gutters.showLineCoverage": true,
+    "coverage-gutters.showRulerCoverage": true,
+    "coverage-gutters.highlightdark": "rgba(0, 122, 30, 0.2)",
+    "coverage-gutters.noHighlightDark": "rgba(163, 0, 0, 0.2)",
+    "coverage-gutters.partialHighlightDark": "rgba(163, 149, 0, 0.2)",
+    "dotnet.automaticallyCreateSolutionInWorkspace": false,
+    "editor.wordWrapColumn": 125,
+    "editor.wordWrap": "wordWrapColumn",
+    "terminal.integrated.fontSize": 12,
+    "coverage-gutters.coverageFileNames": [
+        "lcov.info",
+        "cov.xml",
+        "coverage.xml",
+        "jacoco.xml",
+        "coverage.cobertura.xml"
+    ]
 }
