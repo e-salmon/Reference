@@ -54,7 +54,7 @@
         "list": 
         [
             {
-                "backgroundImage": "C:\\Users\\Eric.Salmon\\OneDrive - Everbridge\\Images\\Logo-PowerShell-Small.png",
+                "backgroundImage": "logos\\Logo-PowerShell-Small.png",
                 "backgroundImageAlignment": "bottomRight",
                 "backgroundImageOpacity": 0.3,
                 "backgroundImageStretchMode": "none",
@@ -97,12 +97,12 @@
                 "source": "Windows.Terminal.VisualStudio"
             },
             {
-                "backgroundImage": "C:\\Users\\Eric.Salmon\\OneDrive - Everbridge\\Images\\Ubuntu.jpg",
+                "backgroundImage": "logos\\Ubuntu.jpg",
                 "backgroundImageOpacity": 0.5,
                 "colorScheme": "Tango Dark",
                 "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
                 "hidden": false,
-                "icon": "C:\\Users\\Eric.Salmon\\OneDrive - Everbridge\\Images\\Logo-Ubuntu.png",
+                "icon": "logos\\Logo-Ubuntu.png",
                 "intenseTextStyle": "bright",
                 "name": "Ubuntu",
                 "opacity": 100,
