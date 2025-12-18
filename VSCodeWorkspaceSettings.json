@@ -4,7 +4,7 @@
     "workbench.colorTheme": "Jellybeans",
     "workbench.iconTheme": "vscode-icons",
     "workbench.colorCustomizations": {
-        "editor.background": "#18181c",
+        "editor.background": "#181818",
         "editor.guides.indentation": true,
         "editor.guides.highlightActiveIndentation": true,
         "minimap.background": "#0f0f0f",
@@ -46,15 +46,18 @@
         "editorInlayHint.typeForeground": "#787878cc",
         "editorInlayHint.typeBackground": "#08000088",
         // Diff
-        "diffEditor.insertedTextBackground": "#00cc0033",    // previous
-        "diffEditor.removedTextBackground": "#cc000033",     // previous
-        "diffEditor.insertedLineBackground": "#22733833",
+        "diffEditor.insertedTextBackground": "#00cc001c",    // previous
+        "diffEditor.removedTextBackground": "#cc000022",     // previous
+        "diffEditor.insertedLineBackground": "#2273381c",
         "diffEditor.removedLineBackground": "#72333333",
         // Coverage Gutters
         "diffEditorGutter.insertedLineBackground": "#22733866",
         "diffEditorGutter.removedLineBackground": "#72333366",
         "diffEditorOverview.insertedForeground": "#22733866",
-        "diffEditorOverview.removedForeground": "#72333366"
+        "diffEditorOverview.removedForeground": "#72333366",
+        // Peekview
+        "peekViewEditor.background": "#0c1420",
+        "peekViewResult.background": "#08101c"
     },
     "workbench.editor.revealIfOpen": true,
     "workbench.editor.tabSizing": "fixed",
@@ -81,31 +84,21 @@
     "git.terminalAuthentication": false,
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "terminal.integrated.mouseWheelZoom": true,
-    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.ignoreTrimWhitespace": false,
     "git-graph.date.format": "ISO Date & Time",
-    "explorer.excludeGitIgnore": true,
-    "csharp.inlayHints.enableInlayHintsForImplicitVariableTypes": true,
-    "csharp.inlayHints.enableInlayHintsForLambdaParameterTypes": true,
-    "csharp.inlayHints.enableInlayHintsForImplicitObjectCreation": true,
     "csharp.inlayHints.enableInlayHintsForTypes": true,
-    "dotnet.inlayHints.enableInlayHintsForParameters": true,
     "dotnet.inlayHints.suppressInlayHintsForParametersThatMatchMethodIntent": true,
-    "dotnet.inlayHints.suppressInlayHintsForParametersThatMatchArgumentName": true,
     "dotnet.inlayHints.suppressInlayHintsForParametersThatDifferOnlyBySuffix": true,
-    "dotnet.inlayHints.enableInlayHintsForObjectCreationParameters": true,
     "dotnet.inlayHints.enableInlayHintsForIndexerParameters": true,
     "dotnet.inlayHints.enableInlayHintsForLiteralParameters": true,
     "debug.openDebug": "openOnDebugBreak",
     "editor.tabCompletion": "off",
-    "powershell.integratedConsole.focusConsoleOnExecute": true,
     "files.defaultLanguage": "",
     "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
     "powershell.buttons.showPanelMovementButtons": false,
     "powershell.codeFolding.showLastLine": true,
     "powershell.sideBar.CommandExplorerVisibility": false,
     "git.pruneOnFetch": true,
-    "gitlab.duoChat.enabled": false,
-    "gitlab.aiAssistedCodeSuggestions.enabled": false,
     "editor.semanticTokenColorCustomizations": {
         "[Jellybeans]": {
             "rules": {
@@ -118,7 +111,12 @@
                 "enum": "#c24ba5",
                 "enumMember": "#d87daa",
                 "variable": "#a0a0a0",
-                "comment": "#986363"
+                "comment": "#986363",
+                "xmlDocCommentDelimiter": "#6c3e3e",
+                "xmlDocCommentName": "#6c3e3e",
+                "xmlDocCommentText": "#a46060",
+                "xmlDocCommentAttributeName": "#c8c8c8",
+                "struct": "#86c691",
             }
         }
     },
@@ -131,7 +129,7 @@
                         "entity.name.tag.yaml"
                     ],
                     "settings": {
-                        "foreground": "#8197BF"
+                        "foreground": "#8197bf"
                     }
                 },
                 {
@@ -144,8 +142,18 @@
                 },
                 {
                     "scope": [
+                        "comment.line.number-sign.yaml",
+                        "comment.line.double-slash.js",
+                        "comment"
+                    ],
+                    "settings": {
+                        "foreground": "#986363"
+                    }
+                },
+                {
+                    "scope": [
                         "punctuation.definition.comment.yaml",
-                        "comment.line.number-sign.yaml"
+                        "punctuation.definition.comment"
                     ],
                     "settings": {
                         "foreground": "#986363"
@@ -156,20 +164,63 @@
     },
     "explorer.confirmDragAndDrop": false,
     "git.fetchOnPull": true,
-    "coverage-gutters.showLineCoverage": true,
-    "coverage-gutters.showRulerCoverage": true,
-    "coverage-gutters.highlightdark": "rgba(0, 122, 30, 0.2)",
-    "coverage-gutters.noHighlightDark": "rgba(163, 0, 0, 0.2)",
-    "coverage-gutters.partialHighlightDark": "rgba(163, 149, 0, 0.2)",
     "dotnet.automaticallyCreateSolutionInWorkspace": false,
-    "editor.wordWrapColumn": 125,
+    "editor.wordWrapColumn": 135,
     "editor.wordWrap": "wordWrapColumn",
-    "terminal.integrated.fontSize": 12,
-    "coverage-gutters.coverageFileNames": [
-        "lcov.info",
-        "cov.xml",
-        "coverage.xml",
-        "jacoco.xml",
-        "coverage.cobertura.xml"
-    ]
+    "livePreview.notifyOnOpenLooseFile": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "dotnet.inlayHints.suppressInlayHintsForParametersThatMatchArgumentName": true,
+    "terminal.integrated.fontSize": 13,
+    "cSpell.language": "en-GB",
+    "csharp.inlayHints.enableInlayHintsForImplicitVariableTypes": true,
+    "dotnet.inlayHints.enableInlayHintsForObjectCreationParameters": true,
+    "cSpell.ignoreWords": [
+        "Newtonsoft",
+        "SAPCONCUR"
+    ],
+    "cSpell.userWords": [
+        "baseuri",
+        "Behavior",
+        "Contrib",
+        "Deserialised",
+        "Everbridge",
+        "Iata",
+        "Memberwise",
+        "Pnrs",
+        "Replacer",
+        "Timezone",
+        "Traveler",
+        "Traxo"
+    ],
+    "workbench.startupEditor": "none",
+    "github.copilot.advanced": {},
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "explorer.excludeGitIgnore": true,
+    "dotnet.projects.enableFileBasedPrograms": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "git-graph.graph.colours": [
+        "#d98500",
+        "#d9008f",
+        "#0085d9",
+        "#ffcc00",
+        "#00d90a",
+        "#a300d9",
+        "#ff0000",
+        "#00d9cc",
+        "#e138e8",
+        "#85d900",
+        "#dc5b23",
+        "#6f24d6"
+    ],
+    "files.exclude": {
+        "**/desktop.ini": true
+    },
+    "python.analysis.typeCheckingMode": "standard",
+    "mdb.mcp.server": "autoStartDisabled",
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "chat.viewSessions.enabled": false,
+    "diffEditor.hideUnchangedRegions.enabled": true
 }
